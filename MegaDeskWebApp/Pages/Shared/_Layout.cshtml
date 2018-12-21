@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MegaDeskWebApp</title>
+    <title>@ViewData["Title"] - MegaDesk WebApp</title>
 
     <environment include="Development">
+        <link rel="stylesheet" href="~/Styles/megadesk.css" />
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -26,13 +27,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-page="/Index" class="navbar-brand">MegaDeskWebApp</a>
+                <a asp-page="/Index" class="navbar-brand">MegaDesk WebApp</a>
+                <a asp-page="/DeskQuotes/Index" class="navbar-brand">All Quotes</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    @*<li><a asp-page="/Index">MegaDesk WebApp</a></li>*@
+                    @*<li><a asp-page="/About">About</a></li>
+                    <li><a asp-page="/Contact">Contact</a></li>*@
                 </ul>
             </div>
         </div>
@@ -44,7 +46,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; 2018 - MegaDeskWebApp</p>
+            <p>&copy; 2018 - MegaDesk WebApp</p>
         </footer>
     </div>
 
